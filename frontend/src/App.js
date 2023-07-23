@@ -12,13 +12,13 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      // alert("submit");
+      alert("submit");
 
       const response = await fetch(`http://127.0.0.1:8000/${location}`);
       console.log(response); // Add this line to inspect the response
       const data = await response.json();
       console.debug(data);
-      // alert(data);
+      alert(data);
 
       setResponseData(data.message);
     } catch (error) {
