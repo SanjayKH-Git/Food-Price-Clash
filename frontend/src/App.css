@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-base {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,6 +24,72 @@
   color: white;
 }
 
+.App-header {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  font-size: 36px;
+  color: crimson;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* font-family: "Arial", sans-serif; */
+  /* Add a subtle text shadow */
+  /* You can add more styles here to customize the font family, weight, etc. */
+}
+
+/* Styles for the search component */
+.App-search {
+  background-color: #15387c;
+  border-radius: 10px;
+  border: 2px solid blueviolet;
+  padding: 20px;
+  /* Increase padding to provide more space inside the container */
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Optional: Style the input elements inside the .App-search container */
+.App-search input {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  /* Add a light border for better visibility */
+  border-radius: 5px;
+  /* Add border radius for a smoother appearance */
+  background-color: #282c34;
+  color: white;
+  font-size: 16px;
+}
+
+/* Optional: Style the submit button inside the .App-search container */
+.App-search button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: #15387c;
+  background-color: rgb(28, 222, 51);
+  color: rgb(35, 18, 55);
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* Add border radius for a rounded button */
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Add a hover effect to the submit button */
+.App-search button:hover {
+  background-color: darkblue;
+}
+
+
 .App-link {
   color: #61dafb;
 }
@@ -32,6 +98,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

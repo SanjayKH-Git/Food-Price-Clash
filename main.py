@@ -14,10 +14,14 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello World!"}
+    return {"message": "Please Enter Correct Details!"}
 
-@app.get("/{location}")
-async def say_hi(location: str):
+@app.get("/{location}/{resturant}")
+async def say_hi(location: str, resturant: str):
     print(f"Received location: {location}")
+    print(f"Resturant: {resturant}")
+    
+    # Food Price Clash Scraping and Analysis Logic
+
     response_data = {"message": f"Hi {location}"}
     return JSONResponse(content=response_data)
