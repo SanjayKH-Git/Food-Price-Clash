@@ -48,7 +48,7 @@ function App() {
                   type="text"
                   value={location}
                   onChange={handleInputChange}
-                  required/>
+                  required />
               </label>
             </div>
 
@@ -59,7 +59,7 @@ function App() {
                   type="text"
                   value={resturant}
                   onChange={handleRestaurantChange}
-                  required/>
+                  required />
               </label>
             </div>
 
