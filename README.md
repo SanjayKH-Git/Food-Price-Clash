@@ -7,5 +7,5 @@ Activate env
 Run Fast API Backend
 `uvicorn main:app --reload`
 
-Run ReactJS App
+Run ReactJS Frontend
 `npm start`
