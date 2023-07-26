@@ -89,6 +89,28 @@
   background-color: darkblue;
 }
 
+.table-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.table-container {
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
 
 .App-link {
   color: #61dafb;

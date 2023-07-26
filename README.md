@@ -17,5 +17,6 @@ uvicorn main:app --reload
 
 Run ReactJS Frontend
 ```shell
+cd frontend
 npm start
 ```

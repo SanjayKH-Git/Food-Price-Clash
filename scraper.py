@@ -40,7 +40,7 @@ def zomatoScraper(location, search_food_rest):
     vdisplay.start()
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=False, args=["--disable-blink-features=AutomationControlled"])
         context = browser.new_context()
         page = context.new_page()
         page.goto(zomato_resturant_link, wait_until="load")
