@@ -1,13 +1,21 @@
 # Food-Price-Clash
 Compare the Best Food before Order
 
-Activate env
+create env 
+```shell
+virtualenv env
 ```
+Activate env
+```shell
 source env/bin/activate
 ```
 
 Run Fast API Backend
-`uvicorn main:app --reload`
+```shell
+uvicorn main:app --reload
+```
 
 Run ReactJS Frontend
-`npm start`
+```shell
+npm start
+```
