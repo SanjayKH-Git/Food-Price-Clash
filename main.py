@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from priceAnalysis import food_json
+from parellizer import food_json
 
 app = FastAPI()
 
@@ -26,6 +26,9 @@ async def say_hi(location: str, resturant: str):
 
     # Food Price Clash Scraping and Analysis Logic
     # response_data = {"message": f"Hi {location}"}
-    response_data = food_json(location, resturant)
+    food_details = food_json(location, resturant)
 
+    response_data = {"message": f"{food_details}"}
+
+    print(response_data)
     return JSONResponse(content=response_data)

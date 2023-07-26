@@ -1,6 +1,8 @@
 import time
 import googlesearch
 from playwright.sync_api import sync_playwright
+from xvfbwrapper import Xvfb
+
 
 location = "Bangalore"
 search_food_rest = "Krishnam Veg"
@@ -11,6 +13,9 @@ zomato_search_query = f"Zomato {search_food_rest} {location}"
 
 zomato_resturant_link = f"{next(googlesearch.search(zomato_search_query, num=5, stop=2, pause=2))}/order"
 print(zomato_resturant_link)
+
+vdisplay = Xvfb()
+vdisplay.start()
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
@@ -26,3 +31,4 @@ with sync_playwright() as p:
 
     print(food_items)
     browser.close()
+vdisplay.stop()

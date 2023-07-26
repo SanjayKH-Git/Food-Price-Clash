@@ -2,9 +2,9 @@
 Compare the Best Food before Order
 
 Activate env
-``
+```
 source env/bin/activate
-``
+```
 
 Run Fast API Backend
 `uvicorn main:app --reload`

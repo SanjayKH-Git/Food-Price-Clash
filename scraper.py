@@ -1,4 +1,5 @@
 import time
+from xvfbwrapper import Xvfb
 import re
 import concurrent.futures
 import googlesearch
@@ -35,6 +36,9 @@ def zomatoScraper(location, search_food_rest):
     zomato_resturant_link = f"{next(googlesearch.search(zomato_search_query, num=5, stop=2, pause=2))}/order"
     print(zomato_resturant_link)
 
+    vdisplay = Xvfb()
+    vdisplay.start()
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         context = browser.new_context()
@@ -44,10 +48,13 @@ def zomatoScraper(location, search_food_rest):
         food_items = dict()
         for food in page.query_selector_all("//div[@class='sc-1s0saks-10 cYSFTJ']"):
             food_name = food.query_selector("h4").inner_text()
-            food_price = food.query_selector(".sc-17hyc2s-1.cCiQWA").inner_text()
+            food_price = food.query_selector(
+                ".sc-17hyc2s-1.cCiQWA").inner_text()
             food_items[food_name] = food_price.replace("₹", "")
 
         browser.close()
-            
+
+    vdisplay.stop()
+
     # print(food_items)
     return food_items
