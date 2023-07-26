@@ -20,7 +20,7 @@ function App() {
       const response = await fetch(`http://127.0.0.1:8000/${location}/${restaurant}`);
       const data = await response.json();
       setResponseData(data.message);
-      console.debug(data.message);
+      console.debug(data);
       if (data && data.message) {
         console.debug("Data Message (Swiggy):", data.message.swiggy);
         console.debug("Data Message (Zomato):", data.message.zomato);
@@ -104,7 +104,7 @@ function App() {
         </div>
 
         <div className="table-wrapper">
-          <p>{responseData.swiggy} </p>
+          {/* <p>{responseData} </p> */}
 
           {renderTable(responseData.swiggy, "Swiggy")}
           {renderTable(responseData.zomato, "Zomato")}
