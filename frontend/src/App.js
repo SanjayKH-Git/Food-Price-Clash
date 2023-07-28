@@ -31,18 +31,53 @@ function App() {
     }
   };
 
+  const renderSuggestion = (swiggy_common_Total, zomato_common_Total) => {
+    // alert(swiggy_common_Total);
+    if (swiggy_common_Total === undefined) {
+      return (
+        <div>
+          <p className="initial">Please Enter Correct Details and Check Outstanding Real-Time Statistics.</p>
+        </div>
+      );
+    } else if (swiggy_common_Total === zomato_common_Total) {
+      return (
+        <div>
+          <h4 className="live">Live</h4>
+          <p className="equal">Based on our analysis, both Swiggy and Zomato have similar prices.
+            However, we recommend checking the Real-Time Price Table displayed below for more details.</p>
+        </div>
+      );
+    } else if (swiggy_common_Total < zomato_common_Total) {
+      return (
+        <div>
+          <h4 className="live">Live</h4>
+          <p className="swiggyCheap">Based on our Real-time analysis, <i className="s">Swiggy</i> is cheaper than <i className="z">Zomato</i> Today.</p>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <h4 className="live">Live</h4>
+          <p className="zomatoCheap">Based on our Real-time analysis, <i className="z">Zomato</i> is cheaper than <i className="s">Swiggy</i> Today.</p>
+        </div>
+      );
+    }
+  };
+
   const renderTable = (data, platform) => {
     if (!data || Object.keys(data).length === 0) {
       return (
-        <div className="table-container">
+        <div className={`table-container ${platform === 'Swiggy' ? 'swiggyTable' : 'zomatoTable'}`}>
           <h2>{platform}</h2>
           <p>None</p>
         </div>
       );
     }
 
+    const zomatoData = responseData.zomato || {};
+
     return (
-      <div className="table-container">
+      <div className={`table-container ${platform === 'Swiggy' ? 'swiggyTable' : 'zomatoTable'}`}>
         <h2>{platform}</h2>
         <table>
           <thead>
@@ -52,12 +87,22 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {Object.keys(data).map((foodName) => (
-              <tr key={foodName}>
-                <td>{foodName}</td>
-                <td>{data[foodName]}</td>
-              </tr>
-            ))}
+            {Object.keys(data).map((foodName) => {
+              const swiggyPrice = data[foodName];
+              const zomatoPrice = zomatoData[foodName];
+              const isSwiggyCheaper = swiggyPrice && zomatoPrice && swiggyPrice < zomatoPrice;
+              const isZomatoCheaper = zomatoPrice && swiggyPrice && zomatoPrice < swiggyPrice;
+
+              return (
+                <tr
+                  key={foodName}
+                  className={isSwiggyCheaper ? (platform === 'Swiggy' ? 'swiggyCheap' : '') : isZomatoCheaper ? (platform === 'Zomato' ? 'zomatoCheap' : '') : ''}
+                >
+                  <td>{foodName}</td>
+                  <td>{swiggyPrice}₹</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -103,9 +148,12 @@ function App() {
           </form>
         </div>
 
-        <div className="table-wrapper">
-          {/* <p>{responseData} </p> */}
+        <h3>Our Suggestion:</h3>
+        <div className="suggestion">
+          <p>{renderSuggestion(responseData.swiggy_common_Total, responseData.zomato_common_Total)} </p>
+        </div>
 
+        <div className="table-wrapper">
           {renderTable(responseData.swiggy, "Swiggy")}
           {renderTable(responseData.zomato, "Zomato")}
         </div>
