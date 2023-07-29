@@ -12,7 +12,7 @@ Compare the Best Food before Order
 
 #### Tech Stacks:
 * Backend:
-  > ![Python][Python]
+  > <sub>![Python][Python]</sub>
   >> ![FastAPI][FastAPI]
   >> ![concurrent.futures][concurrent.futures]
   >> ![xvfbwrapper][xvfbwrapper]
