@@ -3,8 +3,8 @@ Compare the Best Food before Order
 
 ### Swiggy vs Zomato Real Time Price Comparison Website
 > * This Web App Compares Price Between  _Swiggy_ and _Zomato_ by Real Time (live) Web Scraping and Data Analysis.
-> * Within few Clicks User can see the Exclusive Food Name + Prices in Result Table from particular Restuarants from _Swiggy_ and _Zomato_ websites.
-> * After Analysis User will get direct Suggestion - "Which Food Delivery site is cheaper?".
+> * Within few Clicks User can see the Exclusive Food Name + Prices in Result Table from particular Restuarants of _Swiggy_ and _Zomato_ websites.
+> * User will get direct Suggestion - "Which Food Delivery site is cheaper?" from Price-Analysis
 > * Also User can see cheaper Food Item on Result Table in _Green_ colour.
 
 #### Check out Complete Demo
