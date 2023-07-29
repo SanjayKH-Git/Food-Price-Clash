@@ -15,6 +15,8 @@ Compare the Best Food before Order
 * Web Scraping: **Playwright, requests, BeautifulSoup4, urllib, googlesearch, pandas, numpy**
 * Frontend: **React JS, HTML, CSS**
 * ![React][React.js]
+[React.js]: https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=white
+
 ## **Running Application in _Codespace_**
 create env 
 ```shell
