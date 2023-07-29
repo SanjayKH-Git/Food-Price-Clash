@@ -2,7 +2,7 @@
 Compare the Best Food before Order <sub>![Swiggy][Swiggy]</sub> vs <sub>![Zomato][Zomato]</sub>
 
 [Zomato]: https://img.shields.io/badge/-Zomato-ed0726?style=plastic&logo=Zomato&logoColor=white
-[Swiggy ]: https://img.shields.io/badge/-Swiggy-d96f04?style=plastic&logo=Swiggy&logoColor=white
+[Swiggy ]: https://img.shields.io/badge/-Swiggy-e3ad0b?style=plastic&logo=Swiggy&logoColor=white
 
 ### Swiggy vs Zomato Real Time Price Comparison Website
 > - [X] This Web App Compares Price Between  _Swiggy_ and _Zomato_ by Real Time (live) Web Scraping and Data Analysis.
