@@ -14,8 +14,12 @@ Compare the Best Food before Order
 * Backend: **Python Fast-API, concurrent.futures (For Parallelizing Scrape), xvfbwrapper** 
 * Web Scraping: **Playwright, requests, BeautifulSoup4, urllib, googlesearch, pandas, numpy**
 * Frontend: **React JS, HTML, CSS**
+
+<div>
 * ![React][React.js]
-[React.js]: https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=white
+
+ [React.js]: https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=white
+</div>
 
 ## **Running Application in _Codespace_**
 create env 
