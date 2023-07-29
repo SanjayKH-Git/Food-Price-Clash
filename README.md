@@ -11,9 +11,7 @@ Compare the Best Food before Order
 [![Video Title](https://img.youtube.com/vi/C5kNgWme1zs/0.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=C5kNgWme1zs))
 
 #### Tech Stacks:
-* Backend:
-  > ![Python][Python]
-  > ![FastAPI][FastAPI]
+* Backend: ![Python][Python] ![FastAPI][FastAPI]
   > ![concurrent.futures][concurrent.futures]
   > ![xvfbwrapper][xvfbwrapper]
   > 
