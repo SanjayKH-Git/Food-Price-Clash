@@ -11,10 +11,12 @@ Compare the Best Food before Order
 [![Video Title](https://img.youtube.com/vi/C5kNgWme1zs/0.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=C5kNgWme1zs))
 
 #### Tech Stacks:
-* Backend: ![Python][Python] ![FastAPI][FastAPI]
-  > ![concurrent.futures][concurrent.futures]
-  > ![xvfbwrapper][xvfbwrapper]
-  > 
+* Backend:
+  > ![Python][Python]
+  >> ![FastAPI][FastAPI]
+  >> ![concurrent.futures][concurrent.futures]
+  >> ![xvfbwrapper][xvfbwrapper]
+  
 [Python]: https://img.shields.io/badge/-Python-07065c?style=flat-square&logo=python&logoColor=white
 [FastAPI]: https://img.shields.io/badge/-FastAPI-22293E?style=flat-square&logo=fastapi&logoColor=white
 [concurrent.futures]: https://img.shields.io/badge/-concurrent.futures-6772E5?style=plastic&logo=python&logoColor=white
@@ -31,8 +33,8 @@ Compare the Best Food before Order
 
 * Frontend:
   > ![React][React.js]
-  > ![HTML][HTML]
-  > ![CSS][CSS.js]
+  >> ![HTML][HTML]
+  >> ![CSS][CSS.js]
   
 [Playwright]: https://img.shields.io/badge/-Playwright-408f04?style=plastic&logo=playwright&logoColor=white
 [requests]: https://img.shields.io/badge/-requests-ad078f?style=plastic&logo=requests&logoColor=white
