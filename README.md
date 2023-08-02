@@ -1,11 +1,11 @@
 # Food-Price-Clash 
-Compare the Best Food before Order <sub>![Swiggy][Swiggy]</sub> vs <sub>![Zomato][Zomato]</sub>
+Compare the Best Food before Order <sub>![Swiggy][Swiggy]</sub> vs <sub>![Zomato][Zomato]</sub> [INPROGRESS ....]
 
 [Zomato]: https://img.shields.io/badge/-Zomato-ed0726?style=plastic&logo=Zomato&logoColor=white
 [Swiggy ]: https://img.shields.io/badge/-Swiggy-e3ad0b?style=plastic&logo=Swiggy&logoColor=white
 
 ### Swiggy vs Zomato Real Time Price Comparison Website
-> - [X] This Web App Compares Price Between  _Swiggy_ and _Zomato_ by Real Time (live) Web Scraping and Data Analysis.
+> - [X] This Web App Compares Price Between  _Swiggy_ and _Zomato_ by Real Time (live) data streaming with Web Scraping and Data Analysis.
 > - [X] Within few Clicks User can see the Exclusive Food Name + Prices in Result Table from particular Restuarants of _Swiggy_ and _Zomato_ websites.
 > - [X] User will get direct Suggestion - **"Which Food Delivery site is cheaper?"** from Price-Analysis
 > - [X] Also User can see **cheaper Food Item** on Result Table in _Green_ colour.
