@@ -1,5 +1,5 @@
 # Food-Price-Clash 
-Compare the Best Food before Order <sub>![Swiggy][Swiggy]</sub> vs <sub>![Zomato][Zomato]</sub> [INPROGRESS ....]
+Compare the Best Food before Order <sub>![Swiggy][Swiggy]</sub> vs <sub>![Zomato][Zomato]</sub>
 
 [Zomato]: https://img.shields.io/badge/-Zomato-ed0726?style=plastic&logo=Zomato&logoColor=white
 [Swiggy ]: https://img.shields.io/badge/-Swiggy-e3ad0b?style=plastic&logo=Swiggy&logoColor=white
