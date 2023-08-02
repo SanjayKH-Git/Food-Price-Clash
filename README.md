@@ -11,9 +11,11 @@ Compare the Best Food before Order <sub>![Swiggy][Swiggy]</sub> vs <sub>![Zomato
 > - [X] Also User can see **cheaper Food Item** on Result Table in _Green_ colour.
 
 #### Check out Complete Demo
-[![Video Title](https://img.youtube.com/vi/C5kNgWme1zs/0.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=C5kNgWme1zs))
+https://github.com/SanjayKH-Git/Food-Price-Clash/assets/56336350/7005d802-9be7-4880-9d37-39c8cf3ab6df
 
+----
 #### Tech Stacks:
+
 * Backend:
   > <sub>![Python][Python]</sub>
   >> ![FastAPI][FastAPI]
